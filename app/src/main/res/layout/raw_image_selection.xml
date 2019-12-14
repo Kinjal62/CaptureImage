@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageview"
+            android:background="@drawable/border"
+            android:layout_margin="10dp"
+            android:adjustViewBounds="true"
+            android:layout_gravity="center"
+            android:cropToPadding="true"
+            android:scaleType="centerCrop" />
+
+        <ImageButton
+            android:id="@+id/cancel"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="top|right"
+            android:background="@drawable/ic_cancel"
+            android:scaleType="fitStart" />
+    </FrameLayout>
+</LinearLayout>
